@@ -2,13 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>YaraSuvi - Kindergarten Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+    <title>Yarasuvi - contact</title>
+    <meta
+      name="description"
+      content="Yarasuvi - Your Destination for Unique Handcrafted Gifts and Accessories. Explore our exquisite collection of handmade items."
+    />
+    <meta
+      name="keywords"
+      content="handcrafted gifts, handmade accessories, unique gifts, artisanal products, custom-made items"
+    />
+    <meta name="author" content="Your Name or Company Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/mainlogo-removebg-preview.png" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -32,6 +40,41 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Open Graph and Twitter Card meta tags -->
+    <meta property="og:title" content="YaraSuvi" />
+    <meta
+      property="og:description"
+      content="Your Destination for Unique Handcrafted Gifts and Accessories. Explore our exquisite collection of handmade items."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yarasuvi.com" />
+    <meta
+      property="og:image"
+      content="https://www.yarasuvi.com/img/mainlogo-removebg-preview.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="YaraSuvi" />
+    <meta
+      name="twitter:description"
+      content="Your Destination for Unique Handcrafted Gifts and Accessories. Explore our exquisite collection of handmade items."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yarasuvi.com/img/mainlogo-removebg-preview.png"
+    />
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Yara-Suvi",
+        "url": "https://www.yarasuvi.com",
+        "logo": "https://www.yarasuvi.com/img/mainlogo-removebg-preview.png",
+        "description": "Your Destination for Unique Handcrafted Gifts and Accessories. Explore our exquisite collection of handmade items."
+      }
+    </script>
   </head>
 
   <body>
@@ -41,43 +84,32 @@
         class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
       >
         <a
-          href=""
+          href="/"
           class="navbar-brand font-weight-bold text-secondary"
-          style="font-size: 50px"
+          style="font-size: 40px"
         >
-          <i class="flaticon-043-teddy-bear"></i>
-          <span class="text-primary">Yara-Suvi</span>
+          <span class="text-primary text-sm">Yarasuvi Enterprises</span>
+          <!-- <img src="img/mainlogo-removebg-preview.png" alt="" /> -->
         </a>
         <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        onclick="toggleIcon()"
+      >
+        <span class="navbar-toggler-icon" id="menux"></span>
+      </button>
         <div
           class="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
         >
           <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="yarasuvi.com" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="class.html" class="nav-item nav-link">Image-Gallary</a>
-            <!-- <a href="team.html" class="nav-item nav-link">Contact</a> -->
-            <!-- <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Pages</a
-              >
-              <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="single.html" class="dropdown-item">Blog Detail</a>
-              </div>
-            </div> -->
+            <a href="gallery.html" class="nav-item nav-link">Image-Gallery</a>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="./dairy/index.html" class="nav-item nav-link">Diary</a>
           </div>
         </div>
       </nav>
@@ -92,7 +124,7 @@
       >
         <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
         <div class="d-inline-flex text-white">
-          <p class="m-0"><a class="text-white" href="">Home</a></p>
+          <p class="m-0"><a class="text-white" href="yarasuvi.com">Home</a></p>
           <p class="m-0 px-2">/</p>
           <p class="m-0">Contact Us</p>
         </div>
@@ -107,7 +139,55 @@
           <p class="section-title px-5">
             <span class="px-2">Get In Touch</span>
           </p>
-          <h1 class="mb-4">Contact Us For Any Query</h1>
+          <h1 class="">Contact Us For Any Query</h1>
+        </div>
+        <div class="col-lg-5 mb-5">
+          <p>
+            जैविक खेती और जैविक खाद के लिए हमसे सम्पर्क करें , जय किसान जैविक
+            परिवार सदैव आपकी सेवा में
+          </p>
+          <div class="d-flex">
+            <i
+              class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px"
+            ></i>
+            <div class="pl-3">
+              <h5>Address</h5>
+              <p>Jawasiya tah. Dalod dist. Ratlam (MP)</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <i
+              class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px"
+            ></i>
+            <div class="pl-3">
+              <h5>Email</h5>
+              <p>Yara.suvi@gmail.com</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <i
+              class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px"
+            ></i>
+            <div class="pl-3">
+              <h5>Phone</h5>
+              <a href="tel:8349717238">8349717238</a>
+              <br>
+              <a href="tel:7089595439">7089595439</a>            </div>
+          </div>
+          <div class="d-flex">
+            <i
+              class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
+              style="width: 45px; height: 45px"
+            ></i>
+            <div class="pl-3">
+              <h5>Opening Hours</h5>
+              <strong>Monday To Sunday</strong>
+              <p class="m-0">07:00 AM - 08:00 PM</p>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg-7 mb-5">
@@ -116,10 +196,16 @@
               <form name="sentMessage" id="contactForm" novalidate="novalidate">
                 <div class="control-group">
                   <input
+                    type="hidden"
+                    name="access_key"
+                    value="bfd0f66d-74e8-48c4-8350-ee75b53db4b9"
+                  />
+                  <input
                     type="text"
                     class="form-control"
                     id="name"
                     placeholder="Your Name"
+                    name="name"
                     required="required"
                     data-validation-required-message="Please enter your name"
                   />
@@ -130,6 +216,7 @@
                     type="email"
                     class="form-control"
                     id="email"
+                    name="Email"
                     placeholder="Your Email"
                     required="required"
                     data-validation-required-message="Please enter your email"
@@ -141,6 +228,7 @@
                     type="text"
                     class="form-control"
                     id="subject"
+                    name="Subject"
                     placeholder="Subject"
                     required="required"
                     data-validation-required-message="Please enter a subject"
@@ -152,6 +240,7 @@
                     class="form-control"
                     rows="6"
                     id="message"
+                    name="Message"
                     placeholder="Message"
                     required="required"
                     data-validation-required-message="Please enter your message"
@@ -168,55 +257,6 @@
                   </button>
                 </div>
               </form>
-            </div>
-          </div>
-          <div class="col-lg-5 mb-5">
-            <p>
-              Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et
-              kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna
-              elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est
-              eirmod eirmod amet.
-            </p>
-            <div class="d-flex">
-              <i
-                class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Address</h5>
-                <p>123 Street, New York, USA</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Email</h5>
-                <p>info@example.com</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Phone</h5>
-                <p>+012 345 67890</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <i
-                class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle"
-                style="width: 45px; height: 45px"
-              ></i>
-              <div class="pl-3">
-                <h5>Opening Hours</h5>
-                <strong>Sunday - Friday:</strong>
-                <p class="m-0">08:00 AM - 05:00 PM</p>
-              </div>
             </div>
           </div>
         </div>
@@ -246,28 +286,32 @@
             Shop now and redefine your fashion game with Vermy
           </p>
           <div class="d-flex justify-content-start mt-4">
-            <a
+            <!-- <a
               class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
               style="width: 38px; height: 38px"
               href="#"
               ><i class="fab fa-twitter"></i
-            ></a>
+            ></a> -->
             <a
               class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
               style="width: 38px; height: 38px"
-              href="#"
+              href="
+              https://www.instagram.com/reel/C0bLISMpKSq/?igsh=NjZiM2M3MzIxNA=="
+              target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a
+            <!-- <a
               class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
               style="width: 38px; height: 38px"
               href="#"
               ><i class="fab fa-linkedin-in"></i
-            ></a>
+            ></a> -->
             <a
               class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
               style="width: 38px; height: 38px"
-              href="#"
+              href="
+              https://www.instagram.com/reel/C0bLISMpKSq/?igsh=NjZiM2M3MzIxNA=="
+              target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -316,6 +360,9 @@
             >
             <a class="text-white" href="contact.html"
               ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
+            >
+            <a class="text-white" href="./dairy/index.html"
+              ><i class="fa fa-angle-right mr-2"></i>Yara-Suvi Dairy</a
             >
           </div>
         </div>
@@ -391,5 +438,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

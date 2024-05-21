@@ -4183,6 +4183,43 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+/* Define a CSS class for the cross icon */
+.cross-icon {
+  display: inline-block;
+  width: 1.5em; /* Adjust the width as needed */
+  height: 1.5em; /* Adjust the height as needed */
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer; /* Optional: Add cursor pointer for interaction */
+
+  /* Set white background */
+  background-color: white;
+}
+
+/* Style the ::before and ::after pseudo-elements to create the cross shape */
+.cross-icon::before,
+.cross-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%; /* Adjust the line thickness */
+  height: 2px; /* Adjust the length of the lines */
+  background-color: black; /* Set the color of the lines */
+  transform-origin: center;
+}
+
+/* Rotate the ::before pseudo-element to create the diagonal line */
+.cross-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Rotate the ::after pseudo-element to create the other diagonal line */
+.cross-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
